@@ -1,1 +1,10 @@
 theme: jekyll-theme-cayman
+
+# Site settings
+title: Tango Blog
+SEOTitle: Tango Blog
+description: "Tango Blog"
+
+
+# Build settings
+paginate: 5
