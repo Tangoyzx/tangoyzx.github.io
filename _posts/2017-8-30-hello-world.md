@@ -9,9 +9,3 @@ tags:
 ---
 
 ## Hello World.
-
-???
-
-# h1
-
-!!!
