@@ -29,12 +29,19 @@ tags:
 ## 1.2 基于CommandBuffer的贴花效果
 
 官方例子是一个基于延迟渲染的贴花，核心原理如下（DiffuseOnly）：
+
 1、正常渲染，在BeforeLighting处加入贴花渲染流程。
+
 2、对于每一个贴花，渲染一个Cube。
+
 3、对于Cube渲染的每一个像素，根据屏幕坐标获取该像素点的深度，根据屏幕坐标和深度反推出世界空间的坐标。
+
 4、然后把世界空间的坐标使用Cube的WorldToLocal变换到物体空间坐标，然后根据xy对贴花的贴图进行采样。
+
 5、把采样的结果写到像素的漫反射贴图中。
+
 6、正常进行后续渲染流程。
+
 
 假如是带Normal的贴花也会对法线采样并且写到GBuffer的法线贴图中。
 
@@ -75,6 +82,8 @@ target.x = m00 * (center.x ± extents.x) + m01 * (center.y ± extents.y) + m02 *
 ![](http://tangoyzx.github.io/images/posts/post_3.jpg)
 
 （上图中，黑圆为需要生成阴影的物体，蓝框为物体空间的AABB， 褐色线为地面）
+
+为了做成这点，我们需要计算沿着光线方向到地面最远的顶点的距离，并以此延伸包围盒的z。由于方向是固定的，其实只需要求出离地面最远的y即可，也就是求出通过ObjectToWorldMatrix变换后的MaxY，这可以用上面的算法快速解决。
 
 AABB的计算就到这里了。这个做法还有一个问题，就是每个Renderer的Bounds都是已经处理到世界空间的AABB，所以最后算出来的物品空间的AABB会有问题（如下图）。
 
