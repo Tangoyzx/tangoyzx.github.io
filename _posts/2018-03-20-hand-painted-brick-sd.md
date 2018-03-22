@@ -117,6 +117,8 @@ Substance Designer做的大多是真实的石头木头这类东西，还好翻�
 
 ![Grout](http://tangoyzx.github.io/images/posts/hand-painted-1-5.jpg)
 
+![粗糙度](http://tangoyzx.github.io/images/posts/hand-painted-1-10.jpg)
+
 
 # 3 基于法线的Mask
 
