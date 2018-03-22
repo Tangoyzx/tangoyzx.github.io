@@ -14,7 +14,7 @@ tags:
 
 但是我想象中又想做手绘风格的东西，例如
 
-![UnityStylizedAssets](https://forum.unity.com/proxy.php?image=http%3A%2F%2Fi.imgur.com%2FvtcFbaX.jpg&hash=28091cbcacc5d6c95222a6fece41392f)
+![UnityStylizedAssets](https://pic1.zhimg.com/80/v2-a27e9439547031055d3a13a12074f029_hd.jpg)
 
 Substance Designer做的大多是真实的石头木头这类东西，还好翻了下youtube有个[教风格化砖块的教程](https://www.youtube.com/watch?v=e-_5idWnhio&t=4107s)，把其中Substance Designer的技巧和作者对手绘风的一些见解记录在这里。
 
