@@ -1,7 +1,7 @@
 ---
 layout:     default
-title:      "理解微面BRDF中的masking-shadowing函数（未全译完）"
-subtitle:   "重新构造视图空间坐标的方法"
+title:      "理解微面BRDF中的masking-shadowing函数"
+subtitle:   "（未全译完）"
 date:       2017-08-31 23:15:00
 author:     "Tango"
 tags:
